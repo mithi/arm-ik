@@ -18,7 +18,7 @@ This is my turn-in code for as Partial fulfillment of Udacity's Robotics Nanodeg
 
 # Dependencies and Setup
 
-- Install ROS on an computer with Ubuntu 16.04 Xenial
+- Install ROS on a computer with Ubuntu 16.04 Xenial
 - - http://wiki.ros.org/kinetic/Installation/Ubuntu
 
 - Clone Udacity's original repository
@@ -40,7 +40,7 @@ $ cd ~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/scripts
 $ ./safe_spawner.sh  
 ```
 
-- On a separate terminal run the inverse kinematics script
+- On a separate terminal, run the inverse kinematics script
 ```
 $ cd ~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/scripts
 $ rosrun kuka_arm IK_server.py
