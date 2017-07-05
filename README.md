@@ -1,5 +1,5 @@
 # Robotic arm - Pick & Place project
-This is my turn-in code for as Partial fulfillment of Udacity's Robotics Nanodegree. 
+This is my turn-in code as partial fulfillment of Udacity's Robotics Nanodegree. 
 
 # Notes
 
