@@ -21,7 +21,7 @@ def get_hypotenuse(a, b):
 
 def get_cosine_law_angle(a, b, c):    
   # given all sides of a triangle a, b, c
-  # calculate angle gamma between sides a and b  using cosine law
+  # calculate angle gamma between sides a and b using cosine law
   cos_gamma = (a*a + b*b - c*c) / (2*a*b)
   sin_gamma = sqrt(1 - cos_gamma * cos_gamma)
   gamma = atan2(sin_gamma, cos_gamma)
@@ -35,6 +35,7 @@ def get_wrist_center(gripper_point, R0g, dg = 0.303):
   # the coordinates of the gripper (end effector) (x, y, z)
   # the rotation of the gripper in gripper frame wrt to the base frame (R0u)
   # the distance between gripper and wrist center dg which is along common z axis
+  # check WRITEUP.pdf for more info
   xu, yu, zu = gripper_point 
     
   nx, ny, nz = R0g[0, 2], R0g[1, 2], R0g[2, 2]
@@ -50,6 +51,7 @@ def get_first_three_angles(wrist_center):
   # (x, y, z) is the wrist center point wrt base frame
   # return the angles q1, q2, q3 for each respective joint
   # given geometry of the kuka kr210
+  # check WRITEUP.pdf for more info
    
   x, y, z  = wrist_center
     
@@ -83,7 +85,8 @@ def get_last_three_angles(R):
   [                           sin(q5)*cos(q6),                           -sin(q5)*sin(q6),          cos(q5)],
   [-sin(q4)*cos(q5)*cos(q6) - sin(q6)*cos(q4),  sin(q4)*sin(q6)*cos(q5) - cos(q4)*cos(q6),  sin(q4)*sin(q5)]])
 
-  From trigonometry we can get q4, q5, q6 if we know numerical values of all cells of matrix R36  
+  From trigonometry we can get q4, q5, q6 if we know numerical values of all cells of matrix R36
+  check WRITEUP.pdf for more info
   '''    
   sin_q4 = R[2, 2]
   cos_q4 =  -R[0, 2]
