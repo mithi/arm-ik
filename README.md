@@ -24,7 +24,7 @@ This is my turn-in code for as Partial fulfillment of Udacity's RoboND Nanodegre
 - Clone Udacity's original repository
 - - https://github.com/udacity/RoboND-Kinematics-Project
 
-- - Replace `IK_server.py` in `~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/scripts` with the following script
+- - Replace `IK_server.py` in `~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/scripts` with the following script below:
 - - https://github.com/mithi/arm-ik/blob/master/IK_server.py
 
 - Follow the instructions as indicated in the README of the [original repository](https://github.com/udacity/RoboND-Kinematics-Project)
