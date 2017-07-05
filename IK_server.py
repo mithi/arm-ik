@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 # This file is part of Robotic Arm: Pick and Place project for Udacity Robotics nano-degree program
 
 import rospy
@@ -52,7 +51,6 @@ def get_first_three_angles(wrist_center):
   # return the angles q1, q2, q3 for each respective joint
   # given geometry of the kuka kr210
   # check WRITEUP.pdf for more info
-   
   x, y, z  = wrist_center
     
   a1, a2, a3 = 0.35, 1.25, -0.054
@@ -77,17 +75,13 @@ def get_first_three_angles(wrist_center):
 
 
 def get_last_three_angles(R):
-  '''
-  Recall that from our simplification, R36 (R) equals the following:
-
-  Matrix([
-  [-sin(q4)*sin(q6) + cos(q4)*cos(q5)*cos(q6), -sin(q4)*cos(q6) - sin(q6)*cos(q4)*cos(q5), -sin(q5)*cos(q4)],
-  [                           sin(q5)*cos(q6),                           -sin(q5)*sin(q6),          cos(q5)],
-  [-sin(q4)*cos(q5)*cos(q6) - sin(q6)*cos(q4),  sin(q4)*sin(q6)*cos(q5) - cos(q4)*cos(q6),  sin(q4)*sin(q5)]])
-
-  From trigonometry we can get q4, q5, q6 if we know numerical values of all cells of matrix R36
-  check WRITEUP.pdf for more info
-  '''    
+  #Recall that from our simplification, R36 (R) equals the following:
+  #Matrix([
+  #[-sin(q4)*sin(q6) + cos(q4)*cos(q5)*cos(q6), -sin(q4)*cos(q6) - sin(q6)*cos(q4)*cos(q5), -sin(q5)*cos(q4)],
+  #[                           sin(q5)*cos(q6),                           -sin(q5)*sin(q6),          cos(q5)],
+  #[-sin(q4)*cos(q5)*cos(q6) - sin(q6)*cos(q4),  sin(q4)*sin(q6)*cos(q5) - cos(q4)*cos(q6),  sin(q4)*sin(q5)]])
+  #From trigonometry we can get q4, q5, q6 if we know numerical values of all cells of matrix R36 (R)
+  #check WRITEUP.pdf for more info    
   sin_q4 = R[2, 2]
   cos_q4 =  -R[0, 2]
     
@@ -202,8 +196,8 @@ def handle_calculate_IK(req):
       joint_trajectory_point = JointTrajectoryPoint()
     
       # Extract end-effector position and orientation from request
-	  # px,py,pz = end-effector position
-	  # roll, pitch, yaw = end-effector orientation
+      # px,py,pz = end-effector position
+      # roll, pitch, yaw = end-effector orientation
       x = req.poses[i].position.x
       y = req.poses[i].position.y
       z = req.poses[i].position.z
