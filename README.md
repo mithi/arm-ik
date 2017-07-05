@@ -1,4 +1,4 @@
-# Robotic arm - Pick & Place project
+# Robotic arm - Pick & Place Project
 This is my turn-in code as partial fulfillment of Udacity's Robotics Nanodegree. 
 
 # Notes
