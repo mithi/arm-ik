@@ -1,5 +1,7 @@
-# Robotic arm - Pick & Place Project
+# Robotic Arm - Pick & Place Project
 This is my turn-in code as partial fulfillment of Udacity's Robotics Nanodegree. 
+I wrote code to calculate the joint angles of six degree-of-freedom Kuka Kr210 serial manipulator given the position an orientation of its end effector in 3-D space. This code is used by the robot arm in a simulator to pick cylinders in a shelf 
+and drop it in a bin. The simulation is implemented in a ROS environment with Gazebo and Rviz. 
 
 # Notes
 
@@ -13,7 +15,7 @@ This is my turn-in code as partial fulfillment of Udacity's Robotics Nanodegree.
 - - - https://github.com/mithi/arm-ik/blob/master/joint_angles_ik_optimized.ipynb
 - - Derivation of the transforms used in the inverse kinematics process
 - - - https://github.com/mithi/arm-ik/blob/master/total_transform.ipynb
-- - Exposition of Euler angles and how it to get the last three angles 
+- - Exposition of Euler angles and how to get the last three angles 
 - - - https://github.com/mithi/arm-ik/blob/master/playground/euler-angles.ipynb
 
 # Dependencies and Setup
