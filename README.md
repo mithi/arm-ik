@@ -5,7 +5,7 @@ and drop it in a bin. The simulation is implemented in a ROS environment with Ga
 
 # Notes
 
-## [WRITEUP](./WRITEUP.pd)
+## [WRITEUP](./WRITEUP.pdf)
 
 ## Jupyter notebooks:
 - [Exposition of the inverse kinematics thought process](./notebooks/joint_angles_ik_exposition.ipynb)
