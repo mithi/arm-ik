@@ -8,9 +8,9 @@ and drop it in a bin. The simulation is implemented in a ROS environment with Ga
 ## [WRITEUP](./WRITEUP.pd)
 
 ## Jupyter notebooks:
-- [Exposition of the inverse kinematics thought process](./joint_angles_ik_exposition.ipynb)
-- [Optimization of the inverse kinematics process](./joint_angles_ik_optimized.ipynb)
-- [Derivation of the transforms used in the inverse kinematics process](./total_transform.ipynb)
+- [Exposition of the inverse kinematics thought process](./notebooks/joint_angles_ik_exposition.ipynb)
+- [Optimization of the inverse kinematics process](./notebooks/joint_angles_ik_optimized.ipynb)
+- [Derivation of the transforms used in the inverse kinematics process](./notebooks//total_transform.ipynb)
 - [Exposition of Euler angles and how to get the last three angles](./playground/euler-angles.ipynb)
 
 # Dependencies and Setup
